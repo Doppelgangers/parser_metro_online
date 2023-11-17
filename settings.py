@@ -1,3 +1,8 @@
+import pathlib
+
+SAVE_FOLDER = pathlib.Path.cwd() / "data"
+SAVE_FOLDER.mkdir(parents=True, exist_ok=True)
+
 cookies = {
     'is18Confirmed': 'true',
     'metroStoreId': '10',
